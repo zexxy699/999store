@@ -87,14 +87,18 @@ export default function ProductDetailPage() {
     // Clear previous content
     formElement.innerHTML = ""
 
-    // Create and append script
+    // Create form wrapper
+    const form = document.createElement("form")
+
+    // Create script
     const script = document.createElement("script")
     script.id = "razorpay-script"
     script.src = "https://checkout.razorpay.com/v1/payment-button.js"
     script.async = true
     script.setAttribute("data-payment_button_id", product.razorpayButtonId)
 
-    formElement.appendChild(script)
+    form.appendChild(script)
+    formElement.appendChild(form)
   }, [product?.razorpayButtonId, slug])
 
   if (!product) {
@@ -165,7 +169,7 @@ export default function ProductDetailPage() {
                 <p className="text-2xl font-black text-white">Ready to Purchase?</p>
               </div>
 
-              <div id="razorpay-form" className="bg-white rounded-lg p-4"></div>
+              <div id="razorpay-form" className="bg-white rounded-lg p-4 min-h-12"></div>
 
               <div className="mt-6 flex gap-3 text-xs font-bold text-blue-100">
                 <div>✓ Instant Access</div>

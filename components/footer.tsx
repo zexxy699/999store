@@ -30,7 +30,7 @@ export default function Footer() {
               X
             </a>
             <a
-              href="https://instagram.com"
+              href="https://instagram.com/the999stores"
               target="_blank"
               rel="noopener noreferrer"
               className="text-gray-300 hover:text-blue-400 transition-colors text-lg font-bold"
@@ -38,7 +38,7 @@ export default function Footer() {
               Instagram
             </a>
             <a
-              href="https://telegram.org"
+              href="https://t.me/the999store"
               target="_blank"
               rel="noopener noreferrer"
               className="text-gray-300 hover:text-blue-400 transition-colors text-lg font-bold"
