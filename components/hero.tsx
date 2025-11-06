@@ -33,23 +33,23 @@ export default function Hero() {
       </div>
 
       {/* Content with staggered animations */}
-      <div className="relative z-10 text-center max-w-4xl px-4">
+      <div className="relative z-10 text-center max-w-4xl px-4 sm:px-6">
         <div
-          className="mb-6 text-blue-300 font-black tracking-widest uppercase text-sm opacity-100 animate-slide-in-down"
+          className="mb-4 sm:mb-6 text-blue-300 font-black tracking-widest uppercase text-xs sm:text-sm opacity-100 animate-slide-in-down"
           style={{ animationDelay: "0.2s" }}
         >
           Next Generation Digital Store
         </div>
 
         <h1
-          className="text-7xl md:text-8xl font-black text-white mb-8 text-balance leading-tight tracking-tight drop-shadow-lg animate-slide-in-up"
+          className="text-4xl sm:text-5xl md:text-7xl lg:text-8xl font-black text-white mb-4 sm:mb-8 text-balance leading-tight tracking-tight drop-shadow-lg animate-slide-in-up"
           style={{ animationDelay: "0.4s" }}
         >
           Next-Gen Digital Store
         </h1>
 
         <p
-          className="text-2xl md:text-3xl text-white mb-12 text-balance font-black leading-relaxed drop-shadow-md animate-slide-in-up"
+          className="text-lg sm:text-xl md:text-2xl lg:text-3xl text-white mb-8 sm:mb-12 text-balance font-black leading-relaxed drop-shadow-md animate-slide-in-up"
           style={{ animationDelay: "0.6s" }}
         >
           Explore blockchain, tech, and design tools built for the future.
@@ -57,7 +57,7 @@ export default function Hero() {
 
         <button
           onClick={scrollToProducts}
-          className="px-12 py-4 bg-gradient-to-r from-blue-600 to-blue-700 hover:from-blue-500 hover:to-blue-600 text-white font-black rounded-lg transition-all text-lg shadow-2xl uppercase tracking-wider border-2 border-blue-400 neon-glow-hover animate-scale-in btn-premium"
+          className="px-6 sm:px-8 md:px-12 py-3 sm:py-4 bg-gradient-to-r from-blue-600 to-blue-700 hover:from-blue-500 hover:to-blue-600 text-white font-black rounded-lg transition-all text-sm md:text-lg shadow-2xl uppercase tracking-wider border-2 border-blue-400 neon-glow-hover animate-scale-in btn-premium"
           style={{ animationDelay: "0.8s" }}
         >
           Shop Now
@@ -65,11 +65,11 @@ export default function Hero() {
       </div>
 
       <div
-        className="absolute top-1/4 left-10 w-40 h-40 bg-blue-400/30 rounded-full blur-3xl opacity-70 animate-float"
+        className="absolute top-1/4 left-10 w-40 h-40 bg-blue-400/30 rounded-full blur-3xl opacity-70 animate-float hidden sm:block"
         style={{ animationDelay: "0s" }}
       ></div>
       <div
-        className="absolute bottom-1/4 right-10 w-56 h-56 bg-blue-500/25 rounded-full blur-3xl opacity-50 animate-float"
+        className="absolute bottom-1/4 right-10 w-56 h-56 bg-blue-500/25 rounded-full blur-3xl opacity-50 animate-float hidden md:block"
         style={{ animationDelay: "1s" }}
       ></div>
     </section>

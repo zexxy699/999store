@@ -38,27 +38,27 @@ export default function FeaturedProducts() {
   return (
     <section id="featured" className="py-24 px-4 bg-white relative overflow-hidden">
       <div className="max-w-7xl mx-auto mb-20">
-        <div className="text-blue-600 font-bold tracking-widest uppercase text-sm mb-4 inline-block px-4 py-2 bg-blue-500/10 rounded-full border border-blue-500/30">
+        <div className="text-blue-600 font-bold tracking-widest uppercase text-xs sm:text-sm mb-4 inline-block px-4 py-2 bg-blue-500/10 rounded-full border border-blue-500/30">
           Premium Collection
         </div>
-        <h2 className="text-5xl md:text-6xl font-bold text-gray-950 text-balance leading-tight mt-4">
+        <h2 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold text-gray-950 text-balance leading-tight mt-4">
           Premium Digital Products
         </h2>
-        <p className="text-gray-700 text-lg mt-4 max-w-2xl font-medium">
+        <p className="text-gray-700 text-base sm:text-lg mt-4 max-w-2xl font-medium">
           Curated digital solutions for blockchain enthusiasts, developers, and entrepreneurs
         </p>
       </div>
 
       {/* Products grid */}
-      <div className="max-w-7xl mx-auto grid md:grid-cols-3 gap-8">
+      <div className="max-w-7xl mx-auto grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4 sm:gap-6 md:gap-8">
         {products.map((product) => (
           <ProductCard key={product.id} product={product} />
         ))}
       </div>
 
-      <div className="absolute top-1/4 -left-40 w-80 h-80 bg-blue-500/25 rounded-full blur-3xl opacity-40"></div>
-      <div className="absolute bottom-1/3 -right-40 w-80 h-80 bg-blue-500/25 rounded-full blur-3xl opacity-40"></div>
-      <div className="absolute top-1/2 left-1/3 w-96 h-96 bg-blue-600/25 rounded-full blur-3xl opacity-30"></div>
+      <div className="absolute top-1/4 -left-40 w-80 h-80 bg-blue-500/25 rounded-full blur-3xl opacity-40 hidden lg:block"></div>
+      <div className="absolute bottom-1/3 -right-40 w-80 h-80 bg-blue-500/25 rounded-full blur-3xl opacity-40 hidden lg:block"></div>
+      <div className="absolute top-1/2 left-1/3 w-96 h-96 bg-blue-600/25 rounded-full blur-3xl opacity-30 hidden lg:block"></div>
     </section>
   )
 }

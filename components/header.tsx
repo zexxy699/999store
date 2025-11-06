@@ -41,8 +41,15 @@ export default function Header() {
           </a>
         </nav>
 
+        {/* Mobile hamburger menu and shop button for mobile */}
+        <div className="md:hidden flex items-center gap-4">
+          <a href="#featured" className="text-blue-600 font-bold">
+            Menu
+          </a>
+        </div>
+
         {/* CTA Button with premium hover */}
-        <button className="px-6 py-2.5 bg-gradient-to-r from-blue-600 to-blue-700 hover:from-blue-500 hover:to-blue-600 text-white font-bold rounded-lg transition-all duration-300 shadow-lg hover:shadow-xl neon-glow-hover uppercase text-sm tracking-wider">
+        <button className="px-4 md:px-6 py-2 md:py-2.5 bg-gradient-to-r from-blue-600 to-blue-700 hover:from-blue-500 hover:to-blue-600 text-white font-bold rounded-lg transition-all duration-300 shadow-lg hover:shadow-xl neon-glow-hover uppercase text-xs md:text-sm tracking-wider">
           Shop Now
         </button>
       </div>

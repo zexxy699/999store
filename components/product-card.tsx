@@ -42,7 +42,7 @@ export default function ProductCard({ product }: ProductCardProps) {
 
       <div className="relative glass-card p-8 h-full flex flex-col transition-all duration-500 cursor-pointer group-hover:border-blue-400/60 group-hover:shadow-[0_0_40px_rgba(59,130,246,0.25)]">
         {/* Product image with smooth scale animation */}
-        <div className="relative mb-6 overflow-hidden rounded-lg h-48 bg-gradient-to-br from-blue-100 to-blue-50 flex items-center justify-center group-hover:shadow-[inset_0_0_30px_rgba(59,130,246,0.15)] transition-all duration-500">
+        <div className="relative mb-6 overflow-hidden rounded-lg h-40 sm:h-48 bg-gradient-to-br from-blue-100 to-blue-50 flex items-center justify-center group-hover:shadow-[inset_0_0_30px_rgba(59,130,246,0.15)] transition-all duration-500">
           <Image
             src={product.image || "/placeholder.svg?height=300&width=300&query=premium digital product"}
             alt={product.title}
@@ -57,21 +57,21 @@ export default function ProductCard({ product }: ProductCardProps) {
 
         {/* Product info with smooth transitions */}
         <div className="space-y-3 flex-grow">
-          <h3 className="text-2xl font-black text-gray-900 transition-colors duration-300 group-hover:text-blue-600">
+          <h3 className="text-lg sm:text-xl md:text-2xl font-black text-gray-900 transition-colors duration-300 group-hover:text-blue-600">
             {product.title}
           </h3>
-          <p className="text-gray-700 text-base font-semibold leading-relaxed transition-all duration-300">
+          <p className="text-sm sm:text-base md:text-base text-gray-700 font-semibold leading-relaxed transition-all duration-300">
             {product.description}
           </p>
 
           {/* Price and CTA */}
-          <div className="flex items-center justify-between pt-6 border-t border-blue-200 mt-auto gap-4">
-            <span className="text-3xl font-black text-blue-600 transition-all duration-300 group-hover:scale-110">
+          <div className="flex items-center justify-between pt-6 border-t border-blue-200 mt-auto gap-2 sm:gap-4">
+            <span className="text-2xl sm:text-3xl md:text-3xl font-black text-blue-600 transition-all duration-300 group-hover:scale-110">
               {product.price}
             </span>
             <a
               href={`/products/${productSlug}`}
-              className="px-6 py-2.5 bg-gradient-to-r from-blue-600 to-blue-700 hover:from-blue-500 hover:to-blue-600 text-white font-black rounded-lg transition-all shadow-lg neon-glow-hover hover:shadow-[0_0_30px_rgba(59,130,246,0.5)] uppercase text-sm btn-premium"
+              className="px-4 sm:px-6 py-2.5 bg-gradient-to-r from-blue-600 to-blue-700 hover:from-blue-500 hover:to-blue-600 text-white font-black rounded-lg transition-all shadow-lg neon-glow-hover hover:shadow-[0_0_30px_rgba(59,130,246,0.5)] uppercase text-xs sm:text-sm btn-premium"
             >
               Buy Now
             </a>
