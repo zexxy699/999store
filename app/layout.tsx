@@ -8,9 +8,14 @@ const spaceGrotesk = Space_Grotesk({ subsets: ["latin"], variable: "--font-space
 const _geistMono = Geist_Mono({ subsets: ["latin"] })
 
 export const metadata: Metadata = {
-  title: "999stores - Next-Gen Digital Store",
-  description: "Explore blockchain, tech, and design tools built for the future.",
-    generator: 'v0.app'
+  title: "999stores — Premium Digital Products for ₹999",
+  description: "Blockchain guides, portfolio templates, and crypto tools for developers and entrepreneurs. Instant digital delivery. All products ₹999.",
+  keywords: ["blockchain", "digital products", "portfolio template", "crypto tools", "whale tracker", "web3"],
+  openGraph: {
+    title: "999stores — Premium Digital Products for ₹999",
+    description: "Blockchain guides, portfolio templates, and crypto tools. Instant digital delivery.",
+    type: "website",
+  },
 }
 
 export default function RootLayout({
